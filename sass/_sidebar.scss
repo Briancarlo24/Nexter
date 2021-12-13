@@ -1,3 +1,23 @@
 .sidebar {
   background-color: $color-primary;
+
+  &-btn__container {
+    width: 4.5rem;
+    display: grid;
+    gap: 1.2rem;
+    margin: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0 4rem;
+    }
+  }
+}
+
+.nav-btn {
+  border-radius: none;
+  border-radius: 0;
+
+  background-color: #fff;
+  height: 3px;
+  width: 4.5rem;
 }

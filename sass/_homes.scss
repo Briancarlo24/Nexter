@@ -1,13 +1,90 @@
 .homes {
-  background-color: $color-secondary;
   grid-column: center-start / center-end;
   margin: 15rem 0;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem;
+  gap: 7rem;
+}
+.home {
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
+  box-shadow: 0 2rem 5rem rgba($color-grey-light-2, 0.5);
+  overflow: hidden;
 
-  & > * {
-    border: lawngreen 1px solid;
+  &__img {
+    width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 1/2;
+    z-index: 1;
+    transform: scale(1);
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__like {
+    fill: $color-primary;
+    grid-column: 1 / span 2;
+    grid-row: 1/ 2;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+
+    z-index: 2;
+    justify-self: end;
+
+    &:hover {
+      fill: $color-primary-dark;
+    }
+  }
+
+  &__name {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    width: 80%;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: $color-secondary;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem;
+
+    justify-self: center;
+    align-self: end;
+    transform: translateY(50%);
+    z-index: 10;
+  }
+
+  &__location,
+  &__rooms {
+    margin-top: 2.5rem;
+  }
+
+  &__location,
+  &__rooms,
+  &__area,
+  &__price {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    svg {
+      fill: $color-primary;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  &__btn {
+    grid-column: 1 / -1;
   }
 }
