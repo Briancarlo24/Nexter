@@ -41,6 +41,14 @@
   grid-column: 4 / span 3;
   z-index: 2;
   box-shadow: 0 2rem 5rem rgba(#000, 0.2);
+
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
   @media only screen and (max-width: $bp-medium) {
     grid-row: 1 / -1;
     width: 100%;

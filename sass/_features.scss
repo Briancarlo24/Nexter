@@ -21,6 +21,7 @@
   grid-template-columns: min-content 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
+  cursor: pointer;
 
   &__icon {
     fill: $color-primary;
@@ -36,5 +37,9 @@
     font-size: 1.7rem;
     grid-row: 2 /3;
     grid-column: 2 /3;
+  }
+
+  &:hover &__icon {
+    fill: $color-primary-hover;
   }
 }
