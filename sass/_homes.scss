@@ -27,13 +27,8 @@
     grid-column: 1 / span 2;
     grid-row: 1/2;
     z-index: 1;
-    transform: scale(1);
     transition: all 0.2s;
     cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   &__like {

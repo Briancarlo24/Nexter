@@ -583,16 +583,9 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   z-index: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
-}
-
-.home__img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .home__like {
