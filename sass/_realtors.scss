@@ -1,0 +1,10 @@
+.realtors {
+  background-color: $color-secondary;
+  grid-column: col-start 7 / -1;
+
+  &__img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+}

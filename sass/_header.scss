@@ -1,0 +1,15 @@
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / col-end 6;
+
+  &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+    img {
+      max-height: 2.5rem;
+      max-width: 100%;
+    }
+  }
+}
